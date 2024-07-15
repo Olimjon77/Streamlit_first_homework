@@ -30,7 +30,7 @@ if option =="Pix":
     elif option1 == "Line_chart":
         st.line_chart(data= df, x="quantityPix", y="valuePix")
     else:
-        st.scatter_chart(data= df, x="quantityPix", y="valuePix")
+        st.vega_lite_chart(data= df, x="quantityPix", y="valuePix")
 
 
 elif option =="TED":
@@ -43,7 +43,7 @@ elif option =="TED":
     elif option1 == "Line_chart":
         st.line_chart(data= df, x="quantityTED", y="valueTED")
     else:
-        st.scatter_chart(data= df, x="quantityTED", y="valueTED")
+        st.vega_lite_chart(data= df, x="quantityTED", y="valueTED")
 
 
 elif option =="TEC":
@@ -56,7 +56,7 @@ elif option =="TEC":
     elif option1 == "Line_chart":
         st.line_chart(data= df, x="quantityTEC", y="valueTEC")
     else:
-        st.scatter_chart(data= df, x="quantityTEC", y="valueTEC")
+        st.vega_lite_chart(data= df, x="quantityTEC", y="valueTEC")
 
 
 else:
@@ -69,7 +69,7 @@ else:
     elif option1 == "Line_chart":
         st.line_chart(data= df, x="quantityBrazilianBoletoPayment", y="valueBrazilianBoletoPayment")
     else:
-        st.scatter_chart(data= df, x="quantityBrazilianBoletoPayment", y="valueBrazilianBoletoPayment")
+        st.vega_lite_chart(data= df, x="quantityBrazilianBoletoPayment", y="valueBrazilianBoletoPayment")
 
       
 
