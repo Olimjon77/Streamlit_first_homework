@@ -30,7 +30,11 @@ if option =="Pix":
     elif option1 == "Line_chart":
         st.line_chart(data= df, x="quantityPix", y="valuePix")
     else:
-        st.vega_lite_chart(data= df, x="quantityPix", y="valuePix")
+        # st.vega_lite_chart(data= df, x="quantityPix", y="valuePix")
+        plt.scatter(data=df, x="quantityPix", y="valuePix" )
+        plt.xlabel("quantityPix")
+        plt.ylabel("valuePix")
+        st.pyplot(plt)
 
 
 elif option =="TED":
@@ -43,7 +47,10 @@ elif option =="TED":
     elif option1 == "Line_chart":
         st.line_chart(data= df, x="quantityTED", y="valueTED")
     else:
-        st.vega_lite_chart(data= df, x="quantityTED", y="valueTED")
+        plt.scatter(data=df, x="quantityTED", y="valueTED" )
+        plt.xlabel("quantityTED")
+        plt.ylabel("valueTED")
+        st.pyplot(plt)
 
 
 elif option =="TEC":
@@ -56,7 +63,10 @@ elif option =="TEC":
     elif option1 == "Line_chart":
         st.line_chart(data= df, x="quantityTEC", y="valueTEC")
     else:
-        st.vega_lite_chart(data= df, x="quantityTEC", y="valueTEC")
+        plt.scatter(data=df, x="quantityTEC", y="valueTEC" )
+        plt.xlabel("quantityTEC")
+        plt.ylabel("valueTEC")
+        st.pyplot(plt)
 
 
 else:
@@ -69,7 +79,10 @@ else:
     elif option1 == "Line_chart":
         st.line_chart(data= df, x="quantityBrazilianBoletoPayment", y="valueBrazilianBoletoPayment")
     else:
-        st.vega_lite_chart(data= df, x="quantityBrazilianBoletoPayment", y="valueBrazilianBoletoPayment")
+        plt.scatter(data=df, x="quantityBrazilianBoletoPayment", y="valueBrazilianBoletoPayment" )
+        plt.xlabel("quantityBrazilianBoletoPayment")
+        plt.ylabel("valueBrazilianBoletoPayment")
+        st.pyplot(plt)
 
       
 
